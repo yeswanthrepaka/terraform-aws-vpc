@@ -20,4 +20,6 @@ locals {
     },
     var.igw_tags
     ) 
+
+   az_names = slice(data.aws_availability_zones.az_names.names,0,2)
 }
